@@ -11,6 +11,7 @@ def nyc_pigeon_organizer(data)
   pigeon_list.each do |bird, attributes|
     attributes.each do |attribute, list|  
       data.each do |trait, value|
+        if trait == attribute
         value.each do |key, birds|
           birds.each do |bird|
       
