@@ -7,7 +7,13 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  
+  pigeon_list.each do |trait, value|
+    value.each do |key, birds|
+      birds.each do |bird|
+        pigeon_list[bird] = {}
+      end
+    end
+  end
   
   
   
