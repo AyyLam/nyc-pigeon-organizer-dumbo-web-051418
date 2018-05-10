@@ -9,8 +9,10 @@ def nyc_pigeon_organizer(data)
     end
   end
   pigeon_list.each do |bird, attributes|
-    attributes.each do |attribute, value|  
-      
+    attributes.each do |attribute, list|  
+      data.each do |trait, value|
+        value.each do |key, birds|
+          birds.each do |bird|
       
     
       
