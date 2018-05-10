@@ -8,7 +8,8 @@ def nyc_pigeon_organizer(data)
     end
   end
   pigeon_list.collect do |bird, attributes|
-    data.
+    data.each do |trait, value|
+      value.each do |key, birds|
     pigeon_list[bird]
       data.collect do |trait, value|
         if trait == attribute
