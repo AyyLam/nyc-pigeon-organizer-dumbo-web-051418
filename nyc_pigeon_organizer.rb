@@ -12,8 +12,16 @@ def nyc_pigeon_organizer(data)
     attributes.each do |attribute, list|  
       data.each do |trait, value|
         if trait == attribute
-        value.each do |key, birds|
-          birds.each do |bird|
+          trait.each do |key, birds|
+            if birds.include?(bird)
+              pigeon_list[bird][trait] << key
+            end
+          end
+        end
+      end
+    end
+  end
+  
       
     
       
