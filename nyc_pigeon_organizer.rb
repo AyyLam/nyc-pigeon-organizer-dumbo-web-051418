@@ -20,7 +20,7 @@ def nyc_pigeon_organizer(data)
         if trait == attribute
           value.collect do |key, birds|
             if birds.include?(bird)
-              pigeon_list[bird][trait] << key
+              pigeon_list[bird][trait] << key.to_s
             end
           end
         end
