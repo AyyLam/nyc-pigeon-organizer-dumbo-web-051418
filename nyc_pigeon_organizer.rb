@@ -4,5 +4,6 @@ def nyc_pigeon_organizer(data)
     value.each do |key, bird|
       pigeon_list[bird] = {}
       pigeon_list[bird][trait] = []
+    
       
 end
