@@ -7,24 +7,12 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
+  
   pigeon_list.collect do |bird, attributes|
     data.each do |trait, value|
-      value.each do |key, birds|
-    pigeon_list[bird]
-      data.collect do |trait, value|
-        if trait == attribute
-          value.collect do |key, birds|
-            if birds.include?(bird)
-              pigeon_list[bird][trait] << key
-      end
+      pigeon_list[bird][trait] = []
     end
   end
-  
-  
-  
-  
-  
-  
   
   pigeon_list.collect do |bird, attributes|
     attributes.collect do |attribute, list|  
